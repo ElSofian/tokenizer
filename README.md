@@ -5,7 +5,6 @@ J'ai choisi **Ethereum** avec le testnet **Sepolia** pour les raisons suivantes 
 - BEP-20 demandait des fonds de départ
 - ERC-20 est le standard le plus documenté et utilisé pour les tokens
 - Les outils disponibles (Remix, Hardhat, Etherscan) sont matures et bien documentés
-- Aucun vrai argent n'est nécessaire grâce au testnet
 
 ## Choix du langage
 J'ai utilisé **Solidity 0.8.34** car c'est le langage natif des smart contracts Ethereum.
