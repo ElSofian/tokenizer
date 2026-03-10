@@ -62,8 +62,6 @@ contract Token42 {
     }
 
     // Créer de nouveaux tokens
-    // 0x45219cdDfB4F7ff0496fCE728d212Bad12B2cdF7
-    // 1000000000000000000
     function mint(address _to, uint256 _value) public onlyOwner {
         totalSupply += _value;
         balanceOf[_to] += _value;

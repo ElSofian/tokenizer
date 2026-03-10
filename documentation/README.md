@@ -46,11 +46,11 @@ adresse.
 
 | Fonction | Paramètres | Description |
 |----------|------------|-------------|
-| `transfer` | `0x000...dEaD`, `1000000000000000000` | Transfère 1 TK42 à une adresse |
-| `mint` | `0x45219...cdF7`, `1000000000000000000` | Crée 1 TK42 et l'envoie à une adresse (owner uniquement) |
+| `transfer` | `0x000000000000000000000000000000000000dEaD`, `1000000000000000000` | Transfère 1 TK42 à une adresse (burner ici) |
+| `mint` | `0x45219cdDfB4F7ff0496fCE728d212Bad12B2cdF7`, `1000000000000000000` | Crée 1 TK42 et l'envoie à une adresse (owner uniquement) |
 | `burn` | `1000000000000000000` | Détruit 1 TK42 de son propre solde |
-| `approve` | `0x8a5D...F0E7`, `5000000000000000000` | Autorise une adresse à dépenser 5 TK42 |
-| `transferFrom` | `0x45219...cdF7`, `0x8a5D...F0E7`, `1000000000000000000` | Transfère 1 TK42 au nom d'une adresse |
+| `approve` | `0x8a5D6c8F958287e9EeE0B77df2462Ad9de58F0E7`, `5000000000000000000` | Autorise une adresse à dépenser 5 TK42 |
+| `transferFrom` | `0x45219cdDfB4F7ff0496fCE728d212Bad12B2cdF7`, `0x8a5D6c8F958287e9EeE0B77df2462Ad9de58F0E7`, `1000000000000000000` | Transfère 1 TK42 au nom d'une adresse |
 
 ## Interagir avec le token
 
