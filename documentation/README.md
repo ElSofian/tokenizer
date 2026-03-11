@@ -75,6 +75,6 @@ adresse.
 2. Installez les dépendances : `npm install`
 3. Copiez le fichier d'exemple : `cp .env.example .env`
 4. Remplissez le `.env` avec votre RPC URL et votre clé privée
-5. Copiez le contrat dans deployment : `cp ../code/Token42.sol contracts/`
+5. Depuis le dossier `deployment/`, créez le dossier contracts et copiez le contrat : `mkdir contracts && cp ../code/Token42.sol contracts/`
 6. Compilez le contrat : `npx hardhat compile`
 7. Déployez : `npx hardhat run scripts/deploy.ts --network sepolia`

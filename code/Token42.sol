@@ -11,10 +11,11 @@ contract Token42 {
     uint8 public decimals = 18;         // Standard ERC-20 : 1 token = 10^18 unités soit 1000000000000000000
     uint256 public totalSupply;         // Nombre total de tokens en circulation
 
-    // Dictionnaire adresse => solde : permet de savoir combien de tokens possède chaque adresse
+	// Créé un dictionnaire contenant toutes les adresses et la fonction qui permet
+	// de savoir combien de tokens possède chaque adresse
     mapping(address => uint256) public balanceOf;
 
-    // Dictionnaire adresse => (adresse => montant autorisé) : système d'approbation ERC-20
+    // Créé un dictionnaire pour le système d'approbation ERC-20
     // Permet à une adresse d'autoriser une autre à dépenser des tokens en son nom
     mapping(address => mapping(address => uint256)) public allowance;
 
@@ -34,8 +35,8 @@ contract Token42 {
         _; // Le code de la fonction s'exécute ici si la condition est remplie
     }
 
-    // Exécuté une seule fois au déploiement
-    // Définit le owner et crée le supply initial dans son wallet
+    // Exécuté au déploiement, il définit le owner et
+	// crée le supply initial dans son wallet
     constructor(uint256 _initialSupply) {
         owner = msg.sender;                              // Le déployeur devient le owner
         totalSupply = _initialSupply * 10 ** decimals;  // Conversion en unités (ex: 1M * 10^18)
@@ -71,7 +72,7 @@ contract Token42 {
         return true;
     }
 
-    // Crée de nouveaux tokens et les envoie à une adresse
+    // Créé de nouveaux tokens et les envoie à une adresse
     // Réservé au owner grâce au modifier onlyOwner
     // address(0) comme émetteur est la convention ERC-20 pour signaler une création de tokens
     function mint(address _to, uint256 _value) public onlyOwner {
